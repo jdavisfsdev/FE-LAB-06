@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { List } from '../components/List';
+import List from '../components/List';
 import { getList } from '../services/getList';
 
 export default function Main() {
@@ -13,5 +13,5 @@ export default function Main() {
   }, []);
 
   if(loading) return <h1>Loading.....</h1>;
-  return <h1>hello</h1>;
+  return <List characters={characters} />;
 }
