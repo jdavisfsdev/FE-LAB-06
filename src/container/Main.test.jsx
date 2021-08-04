@@ -13,7 +13,7 @@ const server = setupServer(
         ctx.json(
           [...Array(+req.params.count)].map((_, i) => ({
             _id: 'dfasfs',
-            name: 'name',
+            name: `name  number ${i}`,
             image: 'imageURL'
           }))
         )

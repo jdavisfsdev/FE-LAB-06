@@ -4,11 +4,11 @@ import { getList } from '../services/getList';
 
 export default function Main() {
   const [loading, setLoading] = useState(true);
-  const [characters, setCharacter] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   useEffect(async () => {
     const characters = await getList();
-    await setCharacter(characters);
+    setCharacters(characters);
     setLoading(false);
   }, []);
 
