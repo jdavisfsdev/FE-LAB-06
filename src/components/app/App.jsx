@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Image from '../../container/Image';
 import Main from '../../container/Main';
-import Image from '../Image';
+
 
 export default function App() {
   return (
